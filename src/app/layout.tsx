@@ -14,18 +14,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <h1
-        style={{
-          position: "absolute",
-          left: "-9999px",
-          width: "1px",
-          height: "1px",
-          overflow: "hidden",
-        }}
-      >
-        Photosnap — Share Your Photo Stories
-      </h1>
-      <body>{children}</body>
+      <body>
+        {" "}
+        <h1
+          style={{
+            position: "absolute",
+            left: "-9999px",
+            width: "1px",
+            height: "1px",
+            overflow: "hidden",
+          }}
+        >
+          Photosnap — Share Your Photo Stories
+        </h1>
+        {children}
+      </body>
     </html>
   );
 }

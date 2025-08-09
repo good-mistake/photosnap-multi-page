@@ -150,6 +150,7 @@ const Page = () => {
             <button
               className="storiesBtn"
               onClick={() => router.push("/stories")}
+              aria-label="storiesBtn42"
             >
               READ THE STORY
               <img src={"/assets/shared/desktop/arrow.svg"} alt="arrow" />
@@ -183,7 +184,7 @@ const Page = () => {
                       <h4>{story.h4}</h4>
                       <p>{story.p}</p>
                     </section>
-                    <button>
+                    <button aria-label="STORY12">
                       <span>READ STORY</span>{" "}
                       <img
                         src={"/assets/shared/desktop/arrow.svg"}

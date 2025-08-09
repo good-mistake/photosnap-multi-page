@@ -144,6 +144,7 @@ const Page = () => {
                 <button
                   className={!year ? "monthly" : "yearly"}
                   onClick={() => setYear((prev) => !prev)}
+                  aria-label="monthly"
                 >
                   <span></span>
                 </button>
@@ -171,7 +172,7 @@ const Page = () => {
                     <h2>{year ? "$190.00" : "$19.00"}</h2>
                     <p>{year ? "per year" : "per month"}</p>
                   </motion.div>
-                  <button>PICK PLAN</button>
+                  <button aria-label="PICK PLAN3">PICK PLAN</button>
                 </li>
                 <li className="pro">
                   <h3>Pro</h3>
@@ -190,7 +191,7 @@ const Page = () => {
                     <h2>{year ? "$390.00" : "$39.00"}</h2>
                     <p>{year ? "per year" : "per month"}</p>
                   </motion.div>
-                  <button>PICK PLAN</button>
+                  <button aria-label="PICK PLAN2">PICK PLAN</button>
                 </li>
                 <li>
                   <h3>Business</h3>
@@ -208,7 +209,7 @@ const Page = () => {
                     <h2>{year ? "$990.00" : "$99.00"}</h2>
                     <p>{year ? "per year" : "per month"}</p>
                   </motion.div>
-                  <button>PICK PLAN</button>
+                  <button aria-label="PICK PLAN">PICK PLAN</button>
                 </li>
               </ul>
             </div>
@@ -331,7 +332,10 @@ const Page = () => {
           <section className="bot">
             <div className="invite">
               <h2>We’re in beta. Get your invite today!</h2>
-              <button onClick={() => router.push("/stories")}>
+              <button
+                onClick={() => router.push("/stories")}
+                aria-label="stories7"
+              >
                 <span>GET AN INVITE</span>
                 <img src={"/assets/shared/desktop/arrow.svg"} alt="arrow" />
               </button>

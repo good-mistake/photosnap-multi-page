@@ -39,6 +39,7 @@ export default function Home() {
                   <button
                     className="invitationBtn"
                     onClick={() => router.push("/invitation")}
+                    aria-label="invitationBtn"
                   >
                     <span>GET AN INVITE</span>
 
@@ -69,6 +70,7 @@ export default function Home() {
                 <button
                   className="storiesBtn"
                   onClick={() => router.push("/stories")}
+                  aria-label="storiesBtn2"
                 >
                   VIEW THE STORIES
                   <img src={"/assets/shared/desktop/arrow.svg"} alt="arrow" />
@@ -95,6 +97,7 @@ export default function Home() {
                 <button
                   className="storiesBtn"
                   onClick={() => router.push("/stories")}
+                  aria-label="storiesBtn"
                 >
                   VIEW THE STORIES{" "}
                   <img src={"/assets/shared/desktop/arrow.svg"} alt="arrow" />
@@ -123,7 +126,10 @@ export default function Home() {
                 <div>
                   <h4>The Mountains</h4>
                   <p>by John Appleseed</p>
-                  <button onClick={() => router.push("/stories")}>
+                  <button
+                    onClick={() => router.push("/stories")}
+                    aria-label="mountain story"
+                  >
                     <span>READ STORY</span>
                     <img src={"/assets/shared/desktop/arrow.svg"} alt="arrow" />
                   </button>
@@ -138,7 +144,10 @@ export default function Home() {
                 <div>
                   <h4>Sunset Cityscapes</h4>
                   <p>by Benjamin Cruz</p>
-                  <button onClick={() => router.push("/stories")}>
+                  <button
+                    onClick={() => router.push("/stories")}
+                    aria-label="sunset story"
+                  >
                     <span>READ STORY</span>
                     <img src={"/assets/shared/desktop/arrow.svg"} alt="arrow" />
                   </button>
@@ -156,7 +165,10 @@ export default function Home() {
                 <div>
                   <h4>18 Days Voyage</h4>
                   <p>by Alexei Borodin</p>
-                  <button onClick={() => router.push("/stories")}>
+                  <button
+                    onClick={() => router.push("/stories")}
+                    aria-label="18 story"
+                  >
                     <span>READ STORY</span>
                     <img src={"/assets/shared/desktop/arrow.svg"} alt="arrow" />
                   </button>
@@ -171,7 +183,10 @@ export default function Home() {
                 <div>
                   <h4>Architecturals</h4>
                   <p>by Samantha Brooke</p>
-                  <button onClick={() => router.push("/stories")}>
+                  <button
+                    onClick={() => router.push("/stories")}
+                    aria-label="arch story"
+                  >
                     <span>READ STORY</span>
                     <img src={"/assets/shared/desktop/arrow.svg"} alt="arrow" />
                   </button>

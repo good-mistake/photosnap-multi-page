@@ -96,7 +96,10 @@ const Page = () => {
             transition={{ duration: 0.8 }}
           >
             <h2>We’re in beta. Get your invite today!</h2>
-            <button onClick={() => router.push("/stories")}>
+            <button
+              onClick={() => router.push("/stories")}
+              aria-label="stories1"
+            >
               <span>GET AN INVITE</span>
               <img src={"/assets/shared/desktop/arrow.svg"} alt="arrow" />
             </button>

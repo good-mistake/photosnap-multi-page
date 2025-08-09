@@ -74,6 +74,7 @@ const Footer = () => {
           <button
             className="invitationBtn"
             onClick={() => navigate("/invitation")}
+            aria-label="invitationBtn3"
           >
             <span>GET AN INVITE</span>
             <img src={"/assets/shared/desktop/arrow.svg"} alt="arrow" />

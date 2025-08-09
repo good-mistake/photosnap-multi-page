@@ -107,7 +107,9 @@ const Page = () => {
                         onChange={(e) => setEmail(e.target.value)}
                       />
                     </label>
-                    <button type="submit">Get Your Invite</button>
+                    <button type="submit" aria-label="submit">
+                      Get Your Invite
+                    </button>
                     {error && (
                       <p className="error">Please fill out all fields.</p>
                     )}
@@ -141,7 +143,7 @@ const Page = () => {
           <section className="bot">
             <div className="invite">
               <h2>Go to Our home page and see our story</h2>
-              <button onClick={() => router.push("/")}>
+              <button onClick={() => router.push("/")} aria-label="stories5">
                 <span>See Our Home </span>
                 <img src={"/assets/shared/desktop/arrow.svg"} alt="arrow" />
               </button>

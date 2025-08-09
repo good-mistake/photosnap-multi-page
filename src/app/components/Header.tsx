@@ -65,12 +65,36 @@ const Header = () => {
                   </div>
                   <nav>
                     <ul>
-                      <li onClick={() => navigate("/stories")}>STORIES</li>
-                      <li onClick={() => navigate("/features")}>FEATURES</li>
-                      <li onClick={() => navigate("/pricing")}>PRICING</li>
+                      <li>
+                        <button
+                          onClick={() => navigate("/stories")}
+                          aria-label="STORY123"
+                        >
+                          STORIES
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          onClick={() => navigate("/features")}
+                          aria-label="features2"
+                        >
+                          FEATURES
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          onClick={() => navigate("/pricing")}
+                          aria-label="pricing32"
+                        >
+                          PRICING
+                        </button>
+                      </li>
                     </ul>
                   </nav>
-                  <button onClick={() => navigate("/invitation")}>
+                  <button
+                    onClick={() => navigate("/invitation")}
+                    aria-label="invitationBtn1"
+                  >
                     GET AN INVITE
                   </button>
                 </motion.div>
@@ -96,6 +120,7 @@ const Header = () => {
           <button
             className="invitationBtn"
             onClick={() => navigate("/invitation")}
+            aria-label="invitationBtn"
           >
             GET AN INVITE
           </button>
