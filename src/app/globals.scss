@@ -623,6 +623,9 @@ body {
         justify-content: center;
         align-items: baseline;
         flex-direction: column;
+        background-size: cover;
+        background-repeat: no-repeat;
+
         @media (max-width: 1100px) {
           background: url("/assets/stories/tablet/moon-of-appalacia.jpg");
           background-repeat: no-repeat;
@@ -754,6 +757,8 @@ body {
             position: relative;
             cursor: pointer;
             overflow: visible;
+            background-size: cover;
+            background-repeat: no-repeat;
             &::after {
               content: "";
               position: absolute;
@@ -1174,6 +1179,9 @@ body {
           min-height: 490px;
           width: 57%;
           background: url("/assets/features/desktop/hero.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+
           @media (max-width: 1100px) {
             background: url("/assets/features/tablet/hero.jpg");
             width: 36%;
@@ -1194,7 +1202,7 @@ body {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-
+        min-height: 60vh;
         ul {
           flex-wrap: wrap;
           display: flex;
@@ -1458,6 +1466,8 @@ body {
         min-height: 490px;
         width: 57%;
         background: url("/assets/pricing/desktop/hero.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
         @media (max-width: 1100px) {
           background: url("/assets/pricing/tablet/hero.jpg");
           width: 36%;
