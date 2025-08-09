@@ -326,6 +326,7 @@ const Page = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={botInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, ease: "easeOut" }}
+          style={{ backgroundColor: "black" }}
         >
           <section className="bot">
             <div className="invite">
