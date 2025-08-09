@@ -143,9 +143,9 @@ const Page = () => {
             </p>
             <p className="area">
               The dissected plateau area, while not actually made up of
-              geological mountains, is popularly called "mountains," especially
-              in eastern Kentucky and West Virginia, and while the ridges are
-              not high, the terrain is extremely rugged.
+              geological mountains, is popularly called &quot;mountains,&quot;
+              especially in eastern Kentucky and West Virginia, and while the
+              ridges are not high, the terrain is extremely rugged.
             </p>
             <button
               className="storiesBtn"

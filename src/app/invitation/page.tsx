@@ -70,7 +70,9 @@ const Page = () => {
           <section className="mid">
             <div className="switchANDOPtion">
               <h2>GET AN INVITE</h2>
-              <p>We’re in beta. Get your invite today Before it's too late!</p>
+              <p>
+                We’re in beta. Get your invite today Before it&apos;s too late!
+              </p>
               <AnimatePresence mode="wait">
                 {!success ? (
                   <motion.form
